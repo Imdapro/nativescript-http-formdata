@@ -16,7 +16,7 @@ export class TNSHttpFormData extends Common
             try {
                 let client = new okhttp3.OkHttpClient();
                 let builder = new okhttp3.MultipartBody.Builder()
-                    .setType(okhttp3.MultipartBody.FORM);
+                    .setType(okhttp3.MultipartBody.Companion.FORM);
 
                 for (let param of params) {
                     if (param.fileName && param.contentType) {
